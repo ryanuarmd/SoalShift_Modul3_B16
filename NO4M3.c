@@ -3,12 +3,13 @@
 
 void* thread_faktorial(void* parameter){
 
-int faktorial;
+int faktorial=1;
 int i;
 
-    for(i=faktorial;i<0;--i){
+    for(i=(int*)parameter;i>0;--i){
         faktorial *= i;
-
-    }
+    printf("%d", faktorial);
+}
 
 }
+    
